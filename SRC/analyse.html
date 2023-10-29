@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Незалежний фінансовий консультант</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/analyse.css" />
+  </head>
+  <body>
+    <h1>Незалежний фінансовий консультант</h1>
+
+    <form id="financialForm">
+      <label for="incomeInput">Базовий дохід (грн/міс):</label>
+      <input type="number" id="incomeInput" />
+
+      <label for="expensesInput">Основні витрати (грн/міс):</label>
+      <input type="number" id="expensesInput" />
+
+      <label for="savingsInput">Доступні заощадження:</label>
+      <input type="number" id="savingsInput" />
+
+      <label for="investmentsInput">Базові Інвестиції:</label>
+      <input type="number" id="investmentsInput" />
+
+      <label for="otherIncomeInput">Інші доходи (нерегулярні, сірі, тощо... грн/міс):</label>
+      <input type="number" id="otherIncomeInput" />
+
+      <label for="otherExpensesInput">Інші витрати (нерегулярні, сірі, тощо...грн/міс):</label>
+      <input type="number" id="otherExpensesInput" />
+
+      <label for="additionalSavingsInput">Додаткові заощадження (неофіційні, на чорний день, тощо...):</label>
+      <input type="number" id="additionalSavingsInput" />
+
+      <label for="additionalInvestmentsInput">Додаткові інвестиції (неофіційні, не декларовані, тощо...):</label>
+      <input type="number" id="additionalInvestmentsInput" />
+
+      <button type="submit">Аналізувати</button>
+    </form>
+
+    <div id="results">
+      <h2>Результати:</h2>
+      <p id="expensesText"></p>
+      <p id="savingsText"></p>
+      <p id="investmentsText"></p>
+      <h2>Базовий аналіз результатів:</h2>
+      <p id="expensesAlertText"></p>
+      <p id="savingsAlertText"></p>
+      <p id="savingsPlanAlertText"></p>
+      <p id="savingsRatioText"></p>
+      <p id="investmentTypeText"></p>
+    </div>
+
+    <script src="/JS/analyse.js"></script>
+  </body>
+</html>
