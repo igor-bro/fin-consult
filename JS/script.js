@@ -72,4 +72,34 @@ financialForm.addEventListener("submit", function (event) {
 
   // Виведення результатів
   document.querySelector("#investmentTypeText").textContent = "Підходящий тип інвестицій - " + investmentType;
+
+  // Кругова діаграма розподілу витрат
+  const expensesCanvas = document.getElementById("expensesChart");
+  const expensesChart = new Chart(expensesCanvas, {
+    type: "doughnut",
+    data: {
+      labels: ["Витрати", "Доходи"],
+      datasets: [
+        {
+          data: [totalExpenses, totalIncome],
+          backgroundColor: ["red", "green"],
+        },
+      ],
+    },
+  });
+
+  // Кругова діаграма розподілу заощаджень
+  const savingsCanvas = document.getElementById("savingsChart");
+  const savingsChart = new Chart(savingsCanvas, {
+    type: "doughnut",
+    data: {
+      labels: ["Заощадження", "Інвестиції"],
+      datasets: [
+        {
+          data: [totalExpenses, totalIncome],
+          backgroundColor: ["blue", "yellow"],
+        },
+      ],
+    },
+  });
 });
