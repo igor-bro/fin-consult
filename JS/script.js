@@ -57,7 +57,7 @@ financialForm.addEventListener("submit", function (event) {
   const savingsRatio = (totalSavings / totalIncome) * 100;
 
   // Виведення результатів
-  document.querySelector("#savingsRatioText").textContent = "Співідношення збережень до доходу:" + savingsRatio.toFixed(2) + "%";
+  document.querySelector("#savingsRatioText").textContent = "Співідношення збережень до доходу: " + savingsRatio.toFixed(2) + "%";
 
   // Визначення підходящого типу інвестицій
   let investmentType;
