@@ -4,50 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Незалежний фінансовий консультант</title>
-    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="#home">Головна</a></li>
-          <li><a href="#about">Про нас</a></li>
-          <li><a href="#services">Послуги</a></li>
-          <li><a href="#contact">Контакти</a></li>
+          <li><a href="#home">Що?</a></li>
+          <li><a href="#about">Хто?</a></li>
+          <li><a href="#services">Як?</a></li>
+          <li><a href="#contact">Де?</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section id="home">
-        <h1>Ласкаво просимо на наш веб-сайт!</h1>
-        <p>
-          Тут ви можете отримати фінансову консультацію та допомогу у досягненні
-          своїх фінансових цілей.
-        </p>
+        <h1>Отримай фінансову консультацію та допомогу у досягненні своїх цілей!</h1>
+        <p>Тут ви можете:</p>
+        <ul>
+          <li>Самостійно провести базовий аналіз фінансового стану.</li>
+          <li>Отримати базові рекомендації на основі проведеного аналізу.</li>
+          <li>Змоделювати свої фінансові цілі, для подальшого планування.</li>
+          <li>Отримати базові рекомендації з фінансового управління, для досягнення своїх цілей.</li>
+        </ul>
       </section>
 
       <section id="about">
-        <h2>Про нас</h2>
-        <p>
-          Ми є незалежними фінансовими консультантами, які пропонують широкий
-          спектр послуг у галузі фінансів.
-        </p>
+        <h2>Про сервіс</h2>
+        <p>Незалежний фінансовий консультант - це сервіс для фізичних осіб, який пропонує базовий спектр послуг у галузі фінансів.</p>
+        <p>Сервіс спроектований практикуючим фінансовим консультантом, за сприянням незалежних веб-розробників.</p>
       </section>
 
       <section id="services">
-        <h2>Наші послуги</h2>
-        <ul>
-          <li><a href="./SRC/analyse.html">Фінансовий аналіз</a></li>
-          <li>Фінансове планування</li>
-          <li>Інвестиційні консультації</li>
-          <li>Страхування та пенсійне забезпечення</li>
-        </ul>
+        <h2>Базовий аналіз поточної ситуації</h2>
+        <form id="financialForm">
+          <label for="incomeInput">Базовий дохід (грн/міс):</label>
+          <input type="number" id="incomeInput" />
+
+          <label for="expensesInput">Основні витрати (грн/міс):</label>
+          <input type="number" id="expensesInput" />
+
+          <label for="savingsInput">Доступні заощадження:</label>
+          <input type="number" id="savingsInput" />
+
+          <label for="investmentsInput">Базові Інвестиції:</label>
+          <input type="number" id="investmentsInput" />
+
+          <label for="otherIncomeInput">Інші доходи (нерегулярні, сірі, тощо... грн/міс):</label>
+          <input type="number" id="otherIncomeInput" />
+
+          <label for="otherExpensesInput">Інші витрати (нерегулярні, сірі, тощо...грн/міс):</label>
+          <input type="number" id="otherExpensesInput" />
+
+          <label for="additionalSavingsInput">Додаткові заощадження (неофіційні, на чорний день, тощо...):</label>
+          <input type="number" id="additionalSavingsInput" />
+
+          <label for="additionalInvestmentsInput">Додаткові інвестиції (неофіційні, не декларовані, тощо...):</label>
+          <input type="number" id="additionalInvestmentsInput" />
+
+          <button type="submit">Аналізувати</button>
+        </form>
+
+        <div id="results">
+          <h3>Результати:</h3>
+          <p id="expensesText"></p>
+          <p id="savingsText"></p>
+          <p id="investmentsText"></p>
+          <h3>Базовий аналіз результатів:</h3>
+          <p id="expensesAlertText"></p>
+          <p id="savingsAlertText"></p>
+          <p id="savingsPlanAlertText"></p>
+          <p id="savingsRatioText"></p>
+          <p id="investmentTypeText"></p>
+        </div>
       </section>
 
       <section id="contact">
         <h2>Контакти</h2>
-        <p>Зв'яжіться з нами, щоб поговорити про ваші фінансові потреби.</p>
+        <p>Зв'яжіться зі мною, щоб отримати розгорнутий фінансовий та індивідуальний фінансовий план.</p>
         <p>Email: info@financialconsultant.com</p>
         <p>Телефон: +1234567890</p>
       </section>
@@ -57,6 +92,6 @@
       <p>© 2022 Незалежний фінансовий консультант. Усі права захищені.</p>
     </footer>
 
-    <script src="./JS/script.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
