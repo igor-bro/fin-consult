@@ -122,6 +122,10 @@ section ul li {
   margin-bottom: 40px;
 }
 
+#results h3:hover {
+  cursor: help;
+}
+
 #chartContainer {
   display: flex;
   width: 50%;

@@ -43,30 +43,30 @@
         <p>* Заповни всі поля максимально точно, щоб отримати отимальний аналіз.</p>
         <form id="financialForm">
           <label for="incomeInput">Базовий дохід (грн/міс):</label>
-          <input type="number" id="incomeInput" />
+          <input type="number" id="incomeInput" required />
 
           <label for="expensesInput">Основні витрати (грн/міс):</label>
-          <input type="number" id="expensesInput" />
+          <input type="number" id="expensesInput" required />
 
           <label for="savingsInput">Доступні заощадження:</label>
-          <input type="number" id="savingsInput" />
+          <input type="number" id="savingsInput" required />
 
           <label for="investmentsInput">Базові Інвестиції:</label>
-          <input type="number" id="investmentsInput" />
+          <input type="number" id="investmentsInput" required />
 
           <label for="otherIncomeInput">Інші доходи (нерегулярні, сірі, тощо... грн/міс):</label>
-          <input type="number" id="otherIncomeInput" />
+          <input type="number" id="otherIncomeInput" required />
 
           <label for="otherExpensesInput">Інші витрати (нерегулярні, сірі, тощо...грн/міс):</label>
-          <input type="number" id="otherExpensesInput" />
+          <input type="number" id="otherExpensesInput" required />
 
           <label for="additionalSavingsInput">Додаткові заощадження (неофіційні, на чорний день, тощо...):</label>
-          <input type="number" id="additionalSavingsInput" />
+          <input type="number" id="additionalSavingsInput" required />
 
           <label for="additionalInvestmentsInput">Додаткові інвестиції (неофіційні, не декларовані, тощо...):</label>
-          <input type="number" id="additionalInvestmentsInput" />
+          <input type="number" id="additionalInvestmentsInput" required />
 
-          <button type="submit">Аналізувати</button>
+          <button type="submit">Почати аналізувати...</button>
         </form>
 
         <div id="results">
@@ -76,6 +76,7 @@
           <p id="investmentsText"></p>
 
           <div id="chartContainer">
+            <h3>Діаграми та інфографіка:</h3>
             <canvas id="expensesChart"></canvas>
             <canvas id="savingsChart"></canvas>
           </div>
@@ -92,12 +93,11 @@
         <h2>Контакти</h2>
         <p>Зв'яжіться зі мною, щоб отримати розгорнутий та індивідуальний фінансовий план.</p>
         <p>Email: info@financialconsultant.com</p>
-        <p>Телефон: +1234567890</p>
       </section>
     </main>
 
     <footer>
-      <p>© 2023 Незалежний фінансовий консультант. Усі права захищені.</p>
+      <p>© 2023 Незалежний фінансовий консультант.</p>
     </footer>
 
     <script src="./script/script.js"></script>
