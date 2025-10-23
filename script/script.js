@@ -96,7 +96,7 @@ financialForm.addEventListener("submit", function (event) {
       labels: ["Заощадження", "Інвестиції"],
       datasets: [
         {
-          data: [totalExpenses, totalIncome],
+          data: [totalSavings, totalInvestments],
           backgroundColor: ["blue", "yellow"],
         },
       ],
